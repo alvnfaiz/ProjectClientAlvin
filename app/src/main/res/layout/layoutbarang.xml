@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/gambarBarang"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/laptop" />
+
+    <TextView
+        android:id="@+id/txtTitleBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/gambarBarang"
+        android:text="Jual Laptop"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keterangan : Intel Celeron J4025 2-core 2.0 (base) / 2.9 (burst) GHz
+2 GB DDR4 non-ECC
+2 x 2.5/3.5 Inch SATA
+2 X 1GbE RJ-45 port
+1 X USB 3.0 port; tower case
+Unit Utama"
+        android:layout_toRightOf="@id/gambarBarang"
+        android:id="@+id/txtTitleKeterangan"
+        android:layout_below="@id/txtTitleBarang"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtHargaBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitleKeterangan"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/gambarBarang"
+        android:text="Harga Rp. 5.000.000"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/txtHargaBarang"
+        android:layout_alignRight="@id/txtHargaBarang"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/star"
+        android:id="@+id/txtLove"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. 1000000"
+        android:layout_toRightOf="@id/txtLove"
+        android:layout_below="@id/txtHargaBarang"
+        android:id="@+id/txtPromo"
+        android:textColor="@color/black"
+        android:layout_marginStart="-40dp"/>
+
+
+</RelativeLayout>
